@@ -1,0 +1,14 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isAllowedUser() {
+      return request.auth != null
+        && request.auth.token.email_verified == true;
+    }
+    match /labs/{uid}/{file} {
+      allow read, write: if isAllowedUser() && request.auth.uid == uid
+        && request.resource.size < 20 * 1024 * 1024
+        && request.resource.contentType.matches('application/pdf');
+    }
+  }
+}

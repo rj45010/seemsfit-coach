@@ -1,0 +1,12 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAllowedUser() {
+      return request.auth != null
+        && request.auth.token.email_verified == true;
+    }
+    match /users/{uid}/{document=**} {
+      allow read, write: if isAllowedUser() && request.auth.uid == uid;
+    }
+  }
+}

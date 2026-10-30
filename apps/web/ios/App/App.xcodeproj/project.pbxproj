@@ -1,0 +1,1000 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D8F413BDA2D560B5E287A4F /* VyomChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE386F877D48378FD9CAFC66 /* VyomChatModel.swift */; };
+		1EB7BC384FCE143D4488D73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B659EE204FF5282C7A263151 /* Assets.xcassets */; };
+		2859929BEA8E99FED415666F /* AdjustRestIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC290EE294B527FBABFBC7 /* AdjustRestIntent.swift */; };
+		28AE13CC22BA6C424CAA21C9 /* WatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AEE00962FB4C1625F5F9F /* WatchSession.swift */; };
+		2FAD9763203C412B000D30F8 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2FAD9762203C412B000D30F8 /* config.xml */; };
+		397FDB21F5799E00DECDF667 /* PlanListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1D3ACE36ACD7D24333928 /* PlanListView.swift */; };
+		470727983D8409B80C11A26F /* SeemsFit Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 84B91B045A8CA4FBDA19EF05 /* SeemsFit Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		48330149C263DB61352128D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AA73C5CCF1B6B968C9AB8E /* Foundation.framework */; };
+		4AD2F9C8D5240F82640FEF37 /* MealChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249C21F8983A8F69B1E762C /* MealChat.swift */; };
+		4CA25D213CC20AC93F115D3F /* SetLogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE3D4057369012E227D6B7 /* SetLogStore.swift */; };
+		4D22ABE92AF431CB00220026 /* CapApp-SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 4D22ABE82AF431CB00220026 /* CapApp-SPM */; };
+		50379B232058CBB4000EE86E /* capacitor.config.json in Resources */ = {isa = PBXBuildFile; fileRef = 50379B222058CBB4000EE86E /* capacitor.config.json */; };
+		504EC3081FED79650016851F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504EC3071FED79650016851F /* AppDelegate.swift */; };
+		504EC30D1FED79650016851F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30B1FED79650016851F /* Main.storyboard */; };
+		504EC30F1FED79650016851F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30E1FED79650016851F /* Assets.xcassets */; };
+		504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC3101FED79650016851F /* LaunchScreen.storyboard */; };
+		50B271D11FEDC1A000F3C39B /* public in Resources */ = {isa = PBXBuildFile; fileRef = 50B271D01FEDC1A000F3C39B /* public */; };
+		5AE23DDBE0615EBF55FE74F2 /* AdjustRestIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC290EE294B527FBABFBC7 /* AdjustRestIntent.swift */; };
+		5C0BA56552DD76E2810FB2BA /* PlanLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B065FC8FD7E92A85F07E22 /* PlanLogView.swift */; };
+		5EBD044F1619CDFA9DF76F97 /* HealthWorkoutsBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B8ABA9ED2D7A46A687E71 /* HealthWorkoutsBridge.swift */; };
+		5F433DDDDBAFC11933020B92 /* RestTimerBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66741B3B6020D97A91B5F7A5 /* RestTimerBridge.swift */; };
+		6C32DDD63DD53F26C02173EA /* SetEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC73B47604CB7EF45B1AAA /* SetEditorView.swift */; };
+		6D3B62A938E99791B46F2F38 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2BBEAC2E722FA4EED38E6 /* WorkoutManager.swift */; };
+		7725CA4742CF2247ED11984E /* SeemsFit Rest Widget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AC28A368259E2E19D659BED7 /* SeemsFit Rest Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		78160C1B6F7B9358C20D78BC /* RestLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74ED7FF57C1D794E8A2F41 /* RestLiveActivity.swift */; };
+		785738716EE62D933E446678 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AA73C5CCF1B6B968C9AB8E /* Foundation.framework */; };
+		7F7453E94A8FE63DC568971B /* VyomChatPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8190A632FB50B652F34003B9 /* VyomChatPlugin.swift */; };
+		7F9F58693DD6D4ECE3DCBE09 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE83C20472F49E1B845B8C1 /* RingView.swift */; };
+		7FC45D92B0B8EAB1AE84E515 /* SeemsFitWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9AA1EE5E5649F2BC2ED175 /* SeemsFitWatchApp.swift */; };
+		83A36EAC9736F78FF353F9DE /* WorkoutPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1265F92B5CA873F969EB3909 /* WorkoutPickerView.swift */; };
+		845CE1BB9AD52668DC62ABE1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7983CA7C1BED7260A4A02D70 /* MainViewController.swift */; };
+		8AB332CF03C489D5180D1BB0 /* WatchBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2384113BD3B06F70DAB10 /* WatchBridge.swift */; };
+		91B94B1CB87EE1F91FE09A18 /* WorkoutLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AF787FC5D96C8C1339D04 /* WorkoutLogView.swift */; };
+		93B4465BD5F5AA9DF36DC76C /* GlanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC91ABDDCC291B61550D5C2D /* GlanceView.swift */; };
+		95AC6371B111F6F66ADA0BF7 /* ActiveWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA116DAA7324B03B72CBB7 /* ActiveWorkoutView.swift */; };
+		9743E063ED4D085ACBAD2686 /* VO2MaxBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67AFC6991CF139BE3F4714 /* VO2MaxBridge.swift */; };
+		A6940A1F0E736FD30451DEB4 /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A853C5DDA310D72BB9462 /* ConnectivityManager.swift */; };
+		B06D23E679EFA0C07FB7CF78 /* RestActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F2FD371EF34B7514B370C9 /* RestActivityAttributes.swift */; };
+		B3EFDAAF4F483601D8F61D83 /* SeemsFit Watch Widget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A2BBDE2AF8B68312FD4FE5BE /* SeemsFit Watch Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BAE4540201240F14DCF6D5B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48DA920044AF05A53C7F5A5 /* Foundation.framework */; };
+		BEE5C04CC386D0FDDB922BFB /* StepsComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24761AE01109B42DAA53168 /* StepsComplication.swift */; };
+		C36DA585FA30B35AAD75CDF4 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D2E434F5839F21DBCF889D /* HealthManager.swift */; };
+		C47BF16ADDDB7830F33C863F /* WorkoutLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227823AB261520CA6C992C1F /* WorkoutLog.swift */; };
+		E3AE99EFE7F601F73A8F1746 /* ExerciseLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8B353023FEF89315B3E81B /* ExerciseLogView.swift */; };
+		EC68589FA9CA0C5AA47217EB /* RestActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F2FD371EF34B7514B370C9 /* RestActivityAttributes.swift */; };
+		EE7AEF3CD83CF6EA4B36EED0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58A51D41FB4762925126B235 /* GoogleService-Info.plist */; };
+		FA065D7D86C1031B54222BC9 /* VyomChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7325C4ACDA6D8F7F8CD77FA /* VyomChatView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A8F754E23066E6E57C5797D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 227DE3EAD40CDFB4399A2266;
+			remoteInfo = "SeemsFit Rest Widget";
+		};
+		7EEE3E14DCB992EB054934AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D79A53967DC3448D7033F0B7;
+			remoteInfo = "SeemsFit Watch";
+		};
+		D6596EAB46BE6F4C915E01B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 854B951CF083230CE0568ABF;
+			remoteInfo = "SeemsFit Watch Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0F6DF70583686A41CFF5CBDD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				470727983D8409B80C11A26F /* SeemsFit Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2153B6C14EA8501404CBCA43 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7725CA4742CF2247ED11984E /* SeemsFit Rest Widget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CEDE664F54A7FE4BABA467 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B3EFDAAF4F483601D8F61D83 /* SeemsFit Watch Widget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		049A853C5DDA310D72BB9462 /* ConnectivityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivityManager.swift; sourceTree = "<group>"; };
+		04F5971FE33F570005AF9A6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1265F92B5CA873F969EB3909 /* WorkoutPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkoutPickerView.swift; sourceTree = "<group>"; };
+		171AF787FC5D96C8C1339D04 /* WorkoutLogView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkoutLogView.swift; sourceTree = "<group>"; };
+		227823AB261520CA6C992C1F /* WorkoutLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkoutLog.swift; sourceTree = "<group>"; };
+		2BE2BBEAC2E722FA4EED38E6 /* WorkoutManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		2FAD9762203C412B000D30F8 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		35B065FC8FD7E92A85F07E22 /* PlanLogView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlanLogView.swift; sourceTree = "<group>"; };
+		4F2AEE00962FB4C1625F5F9F /* WatchSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WatchSession.swift; sourceTree = "<group>"; };
+		4F9AA1EE5E5649F2BC2ED175 /* SeemsFitWatchApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SeemsFitWatchApp.swift; sourceTree = "<group>"; };
+		4FC2384113BD3B06F70DAB10 /* WatchBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WatchBridge.swift; sourceTree = "<group>"; };
+		50379B222058CBB4000EE86E /* capacitor.config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capacitor.config.json; sourceTree = "<group>"; };
+		504EC3041FED79650016851F /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		504EC3071FED79650016851F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		504EC30C1FED79650016851F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		504EC30E1FED79650016851F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		504EC3111FED79650016851F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		504EC3131FED79650016851F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B271D01FEDC1A000F3C39B /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
+		58A51D41FB4762925126B235 /* GoogleService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		65AA73C5CCF1B6B968C9AB8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		66741B3B6020D97A91B5F7A5 /* RestTimerBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RestTimerBridge.swift; sourceTree = "<group>"; };
+		66EA116DAA7324B03B72CBB7 /* ActiveWorkoutView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActiveWorkoutView.swift; sourceTree = "<group>"; };
+		6C8BC7ACB4A1B7690490D41C /* SeemsFit Watch Widget.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = "SeemsFit Watch Widget.entitlements"; sourceTree = "<group>"; };
+		7983CA7C1BED7260A4A02D70 /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		79AEF92DF02B6CEBB62C580C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D67AFC6991CF139BE3F4714 /* VO2MaxBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VO2MaxBridge.swift; sourceTree = "<group>"; };
+		7D8B353023FEF89315B3E81B /* ExerciseLogView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExerciseLogView.swift; sourceTree = "<group>"; };
+		8190A632FB50B652F34003B9 /* VyomChatPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VyomChatPlugin.swift; sourceTree = "<group>"; };
+		84B91B045A8CA4FBDA19EF05 /* SeemsFit Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeemsFit Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		947B8ABA9ED2D7A46A687E71 /* HealthWorkoutsBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealthWorkoutsBridge.swift; sourceTree = "<group>"; };
+		958DCC722DB07C7200EA8C5F /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = debug.xcconfig; path = ../debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		A2BBDE2AF8B68312FD4FE5BE /* SeemsFit Watch Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SeemsFit Watch Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D2E434F5839F21DBCF889D /* HealthManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		A4CC73B47604CB7EF45B1AAA /* SetEditorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SetEditorView.swift; sourceTree = "<group>"; };
+		A5BC290EE294B527FBABFBC7 /* AdjustRestIntent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdjustRestIntent.swift; sourceTree = "<group>"; };
+		AC28A368259E2E19D659BED7 /* SeemsFit Rest Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SeemsFit Rest Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F2FD371EF34B7514B370C9 /* RestActivityAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RestActivityAttributes.swift; sourceTree = "<group>"; };
+		B48DA920044AF05A53C7F5A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B4AE3D4057369012E227D6B7 /* SetLogStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SetLogStore.swift; sourceTree = "<group>"; };
+		B659EE204FF5282C7A263151 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7325C4ACDA6D8F7F8CD77FA /* VyomChatView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VyomChatView.swift; sourceTree = "<group>"; };
+		BE386F877D48378FD9CAFC66 /* VyomChatModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VyomChatModel.swift; sourceTree = "<group>"; };
+		C24761AE01109B42DAA53168 /* StepsComplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StepsComplication.swift; sourceTree = "<group>"; };
+		CFC1D3ACE36ACD7D24333928 /* PlanListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlanListView.swift; sourceTree = "<group>"; };
+		CFE83C20472F49E1B845B8C1 /* RingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		D310FCCC0C5DEBA1756F6E1C /* SeemsFit Watch.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = "SeemsFit Watch.entitlements"; sourceTree = "<group>"; };
+		DE0E661BD08D6BB11B115028 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC74ED7FF57C1D794E8A2F41 /* RestLiveActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RestLiveActivity.swift; sourceTree = "<group>"; };
+		EC91ABDDCC291B61550D5C2D /* GlanceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GlanceView.swift; sourceTree = "<group>"; };
+		F249C21F8983A8F69B1E762C /* MealChat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MealChat.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3667B21B74882E33D407B80B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE4540201240F14DCF6D5B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504EC3011FED79650016851F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D22ABE92AF431CB00220026 /* CapApp-SPM in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB6CAA3B84028332B75938F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785738716EE62D933E446678 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75A1431C147530805C8315C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48330149C263DB61352128D4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F85C8422F2F51BFB1590902 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9DD3F674E5EAD57C9395982 /* watchOS */,
+				7875673051D0DE44F2313C6E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		504EC2FB1FED79650016851F = {
+			isa = PBXGroup;
+			children = (
+				958DCC722DB07C7200EA8C5F /* debug.xcconfig */,
+				504EC3061FED79650016851F /* App */,
+				504EC3051FED79650016851F /* Products */,
+				84B91B045A8CA4FBDA19EF05 /* SeemsFit Watch.app */,
+				4F85C8422F2F51BFB1590902 /* Frameworks */,
+				66FB5CDA9B4BDD1659A313A7 /* SeemsFit Watch */,
+				A2BBDE2AF8B68312FD4FE5BE /* SeemsFit Watch Widget.appex */,
+				EB8552198308C16A7D19D824 /* SeemsFit Watch Widget */,
+				A3556EEC59F267EBDC763AD2 /* SeemsFit Rest Widget */,
+			);
+			sourceTree = "<group>";
+		};
+		504EC3051FED79650016851F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				504EC3041FED79650016851F /* App.app */,
+				AC28A368259E2E19D659BED7 /* SeemsFit Rest Widget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		504EC3061FED79650016851F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				50379B222058CBB4000EE86E /* capacitor.config.json */,
+				504EC3071FED79650016851F /* AppDelegate.swift */,
+				504EC30B1FED79650016851F /* Main.storyboard */,
+				504EC30E1FED79650016851F /* Assets.xcassets */,
+				504EC3101FED79650016851F /* LaunchScreen.storyboard */,
+				504EC3131FED79650016851F /* Info.plist */,
+				2FAD9762203C412B000D30F8 /* config.xml */,
+				50B271D01FEDC1A000F3C39B /* public */,
+				58A51D41FB4762925126B235 /* GoogleService-Info.plist */,
+				4FC2384113BD3B06F70DAB10 /* WatchBridge.swift */,
+				B3F2FD371EF34B7514B370C9 /* RestActivityAttributes.swift */,
+				66741B3B6020D97A91B5F7A5 /* RestTimerBridge.swift */,
+				7983CA7C1BED7260A4A02D70 /* MainViewController.swift */,
+				A5BC290EE294B527FBABFBC7 /* AdjustRestIntent.swift */,
+				7D67AFC6991CF139BE3F4714 /* VO2MaxBridge.swift */,
+				947B8ABA9ED2D7A46A687E71 /* HealthWorkoutsBridge.swift */,
+				4F2AEE00962FB4C1625F5F9F /* WatchSession.swift */,
+				BE386F877D48378FD9CAFC66 /* VyomChatModel.swift */,
+				B7325C4ACDA6D8F7F8CD77FA /* VyomChatView.swift */,
+				8190A632FB50B652F34003B9 /* VyomChatPlugin.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		66FB5CDA9B4BDD1659A313A7 /* SeemsFit Watch */ = {
+			isa = PBXGroup;
+			children = (
+				4F9AA1EE5E5649F2BC2ED175 /* SeemsFitWatchApp.swift */,
+				A2D2E434F5839F21DBCF889D /* HealthManager.swift */,
+				049A853C5DDA310D72BB9462 /* ConnectivityManager.swift */,
+				CFE83C20472F49E1B845B8C1 /* RingView.swift */,
+				EC91ABDDCC291B61550D5C2D /* GlanceView.swift */,
+				2BE2BBEAC2E722FA4EED38E6 /* WorkoutManager.swift */,
+				1265F92B5CA873F969EB3909 /* WorkoutPickerView.swift */,
+				66EA116DAA7324B03B72CBB7 /* ActiveWorkoutView.swift */,
+				227823AB261520CA6C992C1F /* WorkoutLog.swift */,
+				B4AE3D4057369012E227D6B7 /* SetLogStore.swift */,
+				A4CC73B47604CB7EF45B1AAA /* SetEditorView.swift */,
+				171AF787FC5D96C8C1339D04 /* WorkoutLogView.swift */,
+				79AEF92DF02B6CEBB62C580C /* Info.plist */,
+				D310FCCC0C5DEBA1756F6E1C /* SeemsFit Watch.entitlements */,
+				B659EE204FF5282C7A263151 /* Assets.xcassets */,
+				CFC1D3ACE36ACD7D24333928 /* PlanListView.swift */,
+				35B065FC8FD7E92A85F07E22 /* PlanLogView.swift */,
+				7D8B353023FEF89315B3E81B /* ExerciseLogView.swift */,
+				F249C21F8983A8F69B1E762C /* MealChat.swift */,
+			);
+			path = "SeemsFit Watch";
+			sourceTree = "<group>";
+		};
+		7875673051D0DE44F2313C6E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B48DA920044AF05A53C7F5A5 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A3556EEC59F267EBDC763AD2 /* SeemsFit Rest Widget */ = {
+			isa = PBXGroup;
+			children = (
+				EC74ED7FF57C1D794E8A2F41 /* RestLiveActivity.swift */,
+				DE0E661BD08D6BB11B115028 /* Info.plist */,
+			);
+			path = "SeemsFit Rest Widget";
+			sourceTree = "<group>";
+		};
+		E9DD3F674E5EAD57C9395982 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				65AA73C5CCF1B6B968C9AB8E /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		EB8552198308C16A7D19D824 /* SeemsFit Watch Widget */ = {
+			isa = PBXGroup;
+			children = (
+				C24761AE01109B42DAA53168 /* StepsComplication.swift */,
+				04F5971FE33F570005AF9A6C /* Info.plist */,
+				6C8BC7ACB4A1B7690490D41C /* SeemsFit Watch Widget.entitlements */,
+			);
+			path = "SeemsFit Watch Widget";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		227DE3EAD40CDFB4399A2266 /* SeemsFit Rest Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 784B05DED93C5E8DE2E2767E /* Build configuration list for PBXNativeTarget "SeemsFit Rest Widget" */;
+			buildPhases = (
+				246C669AC6F04374C67B25FA /* Sources */,
+				3667B21B74882E33D407B80B /* Frameworks */,
+				1E2D4AF28D3F802CBCE0B5E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SeemsFit Rest Widget";
+			productName = "SeemsFit Rest Widget";
+			productReference = AC28A368259E2E19D659BED7 /* SeemsFit Rest Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		504EC3031FED79650016851F /* App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504EC3161FED79650016851F /* Build configuration list for PBXNativeTarget "App" */;
+			buildPhases = (
+				504EC3001FED79650016851F /* Sources */,
+				504EC3011FED79650016851F /* Frameworks */,
+				504EC3021FED79650016851F /* Resources */,
+				0F6DF70583686A41CFF5CBDD /* Embed Watch Content */,
+				2153B6C14EA8501404CBCA43 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5297C53102C00CA378DB3521 /* PBXTargetDependency */,
+				86676EABB71E4AEE4D9F1518 /* PBXTargetDependency */,
+			);
+			name = App;
+			packageProductDependencies = (
+				4D22ABE82AF431CB00220026 /* CapApp-SPM */,
+			);
+			productName = App;
+			productReference = 504EC3041FED79650016851F /* App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		854B951CF083230CE0568ABF /* SeemsFit Watch Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B659917C7826B04A00E85797 /* Build configuration list for PBXNativeTarget "SeemsFit Watch Widget" */;
+			buildPhases = (
+				8DFEF1E1D88310DEE2E6A342 /* Sources */,
+				5CB6CAA3B84028332B75938F /* Frameworks */,
+				68F4BD886A7208301CE3B3D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SeemsFit Watch Widget";
+			productName = "SeemsFit Watch Widget";
+			productReference = A2BBDE2AF8B68312FD4FE5BE /* SeemsFit Watch Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D79A53967DC3448D7033F0B7 /* SeemsFit Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B640C48A4CCDD809824B33FB /* Build configuration list for PBXNativeTarget "SeemsFit Watch" */;
+			buildPhases = (
+				1751AEFBFAECC47F238ED0D3 /* Sources */,
+				75A1431C147530805C8315C8 /* Frameworks */,
+				FB795ECE7F33BC0C1C2B7C83 /* Resources */,
+				79CEDE664F54A7FE4BABA467 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00DB4EE2099B4A626B0A565F /* PBXTargetDependency */,
+			);
+			name = "SeemsFit Watch";
+			productName = "SeemsFit Watch";
+			productReference = 84B91B045A8CA4FBDA19EF05 /* SeemsFit Watch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		504EC2FC1FED79650016851F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					504EC3031FED79650016851F = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1100;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 504EC2FF1FED79650016851F /* Build configuration list for PBXProject "App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 504EC2FB1FED79650016851F;
+			packageReferences = (
+				D4C12C0A2AAA248700AAC8A2 /* XCLocalSwiftPackageReference "CapApp-SPM" */,
+			);
+			productRefGroup = 504EC3051FED79650016851F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				504EC3031FED79650016851F /* App */,
+				D79A53967DC3448D7033F0B7 /* SeemsFit Watch */,
+				854B951CF083230CE0568ABF /* SeemsFit Watch Widget */,
+				227DE3EAD40CDFB4399A2266 /* SeemsFit Rest Widget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E2D4AF28D3F802CBCE0B5E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504EC3021FED79650016851F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B271D11FEDC1A000F3C39B /* public in Resources */,
+				504EC30F1FED79650016851F /* Assets.xcassets in Resources */,
+				50379B232058CBB4000EE86E /* capacitor.config.json in Resources */,
+				504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */,
+				504EC30D1FED79650016851F /* Main.storyboard in Resources */,
+				2FAD9763203C412B000D30F8 /* config.xml in Resources */,
+				EE7AEF3CD83CF6EA4B36EED0 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F4BD886A7208301CE3B3D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB795ECE7F33BC0C1C2B7C83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB7BC384FCE143D4488D73A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1751AEFBFAECC47F238ED0D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FC45D92B0B8EAB1AE84E515 /* SeemsFitWatchApp.swift in Sources */,
+				C36DA585FA30B35AAD75CDF4 /* HealthManager.swift in Sources */,
+				A6940A1F0E736FD30451DEB4 /* ConnectivityManager.swift in Sources */,
+				7F9F58693DD6D4ECE3DCBE09 /* RingView.swift in Sources */,
+				93B4465BD5F5AA9DF36DC76C /* GlanceView.swift in Sources */,
+				6D3B62A938E99791B46F2F38 /* WorkoutManager.swift in Sources */,
+				83A36EAC9736F78FF353F9DE /* WorkoutPickerView.swift in Sources */,
+				95AC6371B111F6F66ADA0BF7 /* ActiveWorkoutView.swift in Sources */,
+				C47BF16ADDDB7830F33C863F /* WorkoutLog.swift in Sources */,
+				4CA25D213CC20AC93F115D3F /* SetLogStore.swift in Sources */,
+				6C32DDD63DD53F26C02173EA /* SetEditorView.swift in Sources */,
+				91B94B1CB87EE1F91FE09A18 /* WorkoutLogView.swift in Sources */,
+				397FDB21F5799E00DECDF667 /* PlanListView.swift in Sources */,
+				5C0BA56552DD76E2810FB2BA /* PlanLogView.swift in Sources */,
+				E3AE99EFE7F601F73A8F1746 /* ExerciseLogView.swift in Sources */,
+				4AD2F9C8D5240F82640FEF37 /* MealChat.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246C669AC6F04374C67B25FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78160C1B6F7B9358C20D78BC /* RestLiveActivity.swift in Sources */,
+				EC68589FA9CA0C5AA47217EB /* RestActivityAttributes.swift in Sources */,
+				2859929BEA8E99FED415666F /* AdjustRestIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504EC3001FED79650016851F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504EC3081FED79650016851F /* AppDelegate.swift in Sources */,
+				8AB332CF03C489D5180D1BB0 /* WatchBridge.swift in Sources */,
+				B06D23E679EFA0C07FB7CF78 /* RestActivityAttributes.swift in Sources */,
+				5F433DDDDBAFC11933020B92 /* RestTimerBridge.swift in Sources */,
+				845CE1BB9AD52668DC62ABE1 /* MainViewController.swift in Sources */,
+				5AE23DDBE0615EBF55FE74F2 /* AdjustRestIntent.swift in Sources */,
+				9743E063ED4D085ACBAD2686 /* VO2MaxBridge.swift in Sources */,
+				5EBD044F1619CDFA9DF76F97 /* HealthWorkoutsBridge.swift in Sources */,
+				28AE13CC22BA6C424CAA21C9 /* WatchSession.swift in Sources */,
+				0D8F413BDA2D560B5E287A4F /* VyomChatModel.swift in Sources */,
+				FA065D7D86C1031B54222BC9 /* VyomChatView.swift in Sources */,
+				7F7453E94A8FE63DC568971B /* VyomChatPlugin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DFEF1E1D88310DEE2E6A342 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE5C04CC386D0FDDB922BFB /* StepsComplication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00DB4EE2099B4A626B0A565F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SeemsFit Watch Widget";
+			target = 854B951CF083230CE0568ABF /* SeemsFit Watch Widget */;
+			targetProxy = D6596EAB46BE6F4C915E01B9 /* PBXContainerItemProxy */;
+		};
+		5297C53102C00CA378DB3521 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SeemsFit Watch";
+			target = D79A53967DC3448D7033F0B7 /* SeemsFit Watch */;
+			targetProxy = 7EEE3E14DCB992EB054934AC /* PBXContainerItemProxy */;
+		};
+		86676EABB71E4AEE4D9F1518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SeemsFit Rest Widget";
+			target = 227DE3EAD40CDFB4399A2266 /* SeemsFit Rest Widget */;
+			targetProxy = 0A8F754E23066E6E57C5797D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		504EC30B1FED79650016851F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504EC30C1FED79650016851F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		504EC3101FED79650016851F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504EC3111FED79650016851F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C9F40D1A3B111C4E1715C0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "SeemsFit Watch Widget/SeemsFit Watch Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "SeemsFit Watch Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seemsfithealth.app.watchkitapp.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		47DAA446E1E67CE0840A1132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "SeemsFit Rest Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seemsfithealth.app.RestWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49CD2C2A1A9B204849258A8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "SeemsFit Watch/SeemsFit Watch.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "SeemsFit Watch/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SeemsFit;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seemsfithealth.app.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Release;
+		};
+		504EC3141FED79650016851F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958DCC722DB07C7200EA8C5F /* debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		504EC3151FED79650016851F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		504EC3171FED79650016851F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958DCC722DB07C7200EA8C5F /* debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SeemsFit;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-DDEBUG\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seemsfithealth.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		504EC3181FED79650016851F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SeemsFit;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seemsfithealth.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8CC7A30F2920F55C28872538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "SeemsFit Watch/SeemsFit Watch.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "SeemsFit Watch/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SeemsFit;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seemsfithealth.app.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Debug;
+		};
+		8F81053B42FF3A65901743F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "SeemsFit Rest Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seemsfithealth.app.RestWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECF12AC6849AFCA64B8B4369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "SeemsFit Watch Widget/SeemsFit Watch Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "SeemsFit Watch Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seemsfithealth.app.watchkitapp.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		504EC2FF1FED79650016851F /* Build configuration list for PBXProject "App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504EC3141FED79650016851F /* Debug */,
+				504EC3151FED79650016851F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504EC3161FED79650016851F /* Build configuration list for PBXNativeTarget "App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504EC3171FED79650016851F /* Debug */,
+				504EC3181FED79650016851F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		784B05DED93C5E8DE2E2767E /* Build configuration list for PBXNativeTarget "SeemsFit Rest Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F81053B42FF3A65901743F6 /* Release */,
+				47DAA446E1E67CE0840A1132 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B640C48A4CCDD809824B33FB /* Build configuration list for PBXNativeTarget "SeemsFit Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49CD2C2A1A9B204849258A8D /* Release */,
+				8CC7A30F2920F55C28872538 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B659917C7826B04A00E85797 /* Build configuration list for PBXNativeTarget "SeemsFit Watch Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C9F40D1A3B111C4E1715C0A /* Release */,
+				ECF12AC6849AFCA64B8B4369 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D4C12C0A2AAA248700AAC8A2 /* XCLocalSwiftPackageReference "CapApp-SPM" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "CapApp-SPM";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D22ABE82AF431CB00220026 /* CapApp-SPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4C12C0A2AAA248700AAC8A2 /* XCLocalSwiftPackageReference "CapApp-SPM" */;
+			productName = "CapApp-SPM";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 504EC2FC1FED79650016851F /* Project object */;
+}

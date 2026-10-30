@@ -1,0 +1,16 @@
+name = "seemsfit-jarvis"
+main = "src/index.ts"
+compatibility_date = "2026-06-01"
+
+# Non-secret config. API keys are set separately as secrets:
+#   wrangler secret put GEMINI_API_KEY        (required — vision + video form check)
+#   wrangler secret put CEREBRAS_API_KEY      (optional — primary text path, fast & free)
+#   wrangler secret put OPENROUTER_API_KEY    (unused — kept for future use)
+# Text routes Cerebras → Gemini (skips any without a key); media → Gemini.
+# (OpenRouter/llama-3.3-70b dropped from the chain: poor instruction-following.)
+[vars]
+FIREBASE_PROJECT_ID = "your-firebase-project-id"
+GEMINI_MODEL = "gemini-2.5-flash"
+CEREBRAS_MODEL = "gpt-oss-120b"
+OPENROUTER_MODEL = "meta-llama/llama-3.3-70b-instruct"
+ALLOWED_ORIGIN = "https://your-app.web.app"

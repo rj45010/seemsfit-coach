@@ -1,0 +1,21 @@
+{
+  "name": "seemsfit-coach",
+  "license": "AGPL-3.0-only",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "functions"
+  ],
+  "scripts": {
+    "dev": "npm --workspace apps/web run dev",
+    "build": "npm --workspace apps/web run build",
+    "deploy": "firebase deploy",
+    "migrate": "tsx scripts/migrate.ts"
+  },
+  "devDependencies": {
+    "firebase-admin": "^12.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

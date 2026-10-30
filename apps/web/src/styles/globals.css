@@ -1,0 +1,541 @@
+@import 'tailwindcss';
+
+@theme {
+  /* ---------- Apple "Liquid Glass" · alias bridge ----------
+     Legacy --color-* names now point at the --sys-* layer (defined below).
+     Because --sys-* flip in `html.dark`, these aliases flip automatically —
+     so there are NO --color-* overrides in `html.dark` anymore. Change the
+     palette by editing the --sys-* tokens, not these. */
+
+  /* Paper / base */
+  --color-paper: var(--color-sys-grouped); /* page background */
+  --color-surface: var(--color-sys-grouped-2); /* opaque card fill / glass fallback */
+
+  /* Ink — text */
+  --color-ink: var(--color-sys-label);
+  --color-ink-2: var(--color-sys-label-2); /* muted text */
+  --color-ink-3: var(--color-sys-label-3); /* faint text */
+
+  /* Border/outline colour */
+  --color-line: var(--color-sys-separator);
+
+  /* Curated muted-pastel card blocks (solid, dark ink on top) — the "fun" palette. Assigned by
+     section, not per workout type. Change these six + the accent below to re-theme every card. */
+  --color-pink: #dba7a0; /* dusty rose */
+  --color-mint: #a9b98c; /* sage */
+  --color-lavender: #b8a3ad; /* warm heather-mauve (was cold lavender) */
+  --color-butter: #e9c46a; /* mustard */
+  --color-peach: #db9b82; /* clay / terracotta */
+  --color-sky: #a6c2c9; /* soft blue */
+
+  /* Status */
+  --color-good: var(--color-sys-green);
+  --color-warn: var(--color-sys-orange);
+  --color-bad: var(--color-sys-orange);
+  --color-crit: var(--color-sys-red);
+
+  /* The ONE brand accent — a muted forest green that sits well on the warm cream. Used for active
+     states, CTAs, rings, the ambient glow. (Mirror in Color.brand + Band.energy for native/watch.) */
+  --color-accent: #3e7c60;
+  --color-accent-ink: #f4f2ea; /* light text/logo on top of the accent */
+
+  /* M3 Expressive: soft elevation instead of hard offset blocks */
+  --nb-border: 1px;
+  --nb-ink: rgb(0 0 0 / 0.12); /* legacy token — kept soft for any stragglers */
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.1), 0 1px 3px 1px rgb(0 0 0 / 0.06);
+  --shadow-2: 0 1px 2px rgb(0 0 0 / 0.1), 0 2px 6px 2px rgb(0 0 0 / 0.08);
+  --shadow-3: 0 4px 8px 3px rgb(0 0 0 / 0.1), 0 1px 3px rgb(0 0 0 / 0.1);
+  --nb-shadow: var(--shadow-1);
+  --nb-shadow-sm: var(--shadow-1);
+  --nb-shadow-lg: var(--shadow-3);
+
+  /* Radii (M3 Expressive: generous rounding) */
+  --radius-card: 24px;
+  --radius-tile: 16px;
+  --radius-pill: 999px;
+
+  /* Type */
+  --font-display: 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Inter', ui-monospace, monospace;
+
+  /* Motion */
+  --ease-pop: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-quick: 120ms;
+  --dur-base: 200ms;
+
+  /* ===================================================================
+     Apple "Liquid Glass" — system colour layer (LIGHT defaults).
+     Dark values live in `html.dark` below. These are exposed as Tailwind
+     utilities (bg-sys-blue, text-sys-label …) AND consumed by the alias
+     bridge (--color-* → --sys-*) so the whole app reskins from here.
+     =================================================================== */
+
+  /* Backgrounds — warm cream theme. Change --color-sys-grouped to re-tint the whole page. */
+  --color-sys-bg: #f6efe0; /* systemBackground */
+  --color-sys-bg-2: #f1e9d8; /* secondarySystemBackground */
+  --color-sys-bg-3: #f6efe0; /* tertiarySystemBackground */
+  --color-sys-grouped: #f1e9d8; /* systemGroupedBackground — the warm page cream */
+  --color-sys-grouped-2: #fbf5ea; /* secondarySystemGroupedBackground — neutral card surface */
+  --color-sys-grouped-3: #f1e9d8; /* tertiarySystemGroupedBackground */
+
+  /* Labels (text) — warm near-black ink; secondary/tertiary boosted so they stay legible on the
+     pastel cards (a warm dark, not grey). */
+  --color-sys-label: rgb(34 28 20 / 1); /* warm near-black */
+  --color-sys-label-2: rgb(46 38 28 / 0.72);
+  --color-sys-label-3: rgb(46 38 28 / 0.48);
+  --color-sys-label-4: rgb(46 38 28 / 0.26);
+
+  /* Separators */
+  --color-sys-separator: rgb(46 38 28 / 0.24);
+  --color-sys-separator-opaque: #c6c6c8;
+
+  /* Fills (chips, inputs, tracks) */
+  --color-sys-fill: rgb(120 120 128 / 0.2);
+  --color-sys-fill-2: rgb(120 120 128 / 0.16);
+  --color-sys-fill-3: rgb(118 118 128 / 0.12);
+  --color-sys-fill-4: rgb(116 116 128 / 0.08);
+
+  /* Accent set (default app accent = blue) */
+  --color-sys-blue: #007aff;
+  --color-sys-green: #34c759;
+  --color-sys-indigo: #5856d6;
+  --color-sys-orange: #ff9500;
+  --color-sys-red: #ff3b30;
+  --color-sys-pink: #ff2d55;
+  --color-sys-purple: #af52de;
+  --color-sys-teal: #30b0c7;
+  --color-sys-cyan: #32ade6;
+  --color-sys-mint: #00c7be;
+  --color-sys-yellow: #ffcc00;
+  --color-sys-brown: #a2845e;
+
+  /* Gray ramp */
+  --color-sys-gray: #8e8e93;
+  --color-sys-gray-2: #aeaeb2;
+  --color-sys-gray-3: #c7c7cc;
+  --color-sys-gray-4: #d1d1d6;
+  --color-sys-gray-5: #e5e5ea;
+  --color-sys-gray-6: #f2f2f7;
+}
+
+/* ---------- Glass tokens (LIGHT) ----------
+   Translucent fill + blur + light edge highlight + soft depth shadow.
+   Tiers: card / thin (chips,inputs) / chrome (nav,headers) / overlay (sheets). */
+:root {
+  --glass-fill: rgb(255 255 255 / 0.46);
+  --glass-fill-thin: rgb(255 255 255 / 0.3);
+  --glass-fill-chrome: rgb(255 255 255 / 0.52);
+  --glass-fill-overlay: rgb(245 245 247 / 0.8);
+  --glass-blur: 20px;
+  --glass-blur-chrome: 30px;
+  --glass-saturate: 200%;
+  --glass-border: rgb(255 255 255 / 0.5);
+  --glass-highlight: rgb(255 255 255 / 0.65);
+  --glass-shadow: 0 10px 28px -8px rgb(0 0 0 / 0.22);
+  --glass-radius: 24px;
+
+  /* Page background: flat (no blobs). Base colour comes from --color-paper;
+     glass still frosts what scrolls behind it. */
+  --app-bg: none;
+}
+
+/* ---------- Dark theme ----------
+   The --color-* aliases follow the --sys-* tokens (re-declared below), so the
+   whole palette flips automatically. Only the sys, glass and shadow token
+   values plus --nb-ink are overridden here. Toggled by `html.dark`. */
+html.dark {
+  /* Soft elevation on the dark page */
+  --nb-ink: rgb(0 0 0 / 0.5);
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.4), 0 1px 3px 1px rgb(0 0 0 / 0.3);
+  --shadow-2: 0 1px 2px rgb(0 0 0 / 0.4), 0 2px 6px 2px rgb(0 0 0 / 0.35);
+  --shadow-3: 0 4px 8px 3px rgb(0 0 0 / 0.4), 0 1px 3px rgb(0 0 0 / 0.4);
+
+  /* ---------- Apple system colour layer (DARK) ---------- */
+  /* Neutral charcoal base (single theme) — near-black, only a whisper of warmth, NOT blue. */
+  --color-sys-bg: #161618;
+  --color-sys-bg-2: #201f22;
+  --color-sys-bg-3: #2a292d;
+  --color-sys-grouped: #161618; /* page paper */
+  --color-sys-grouped-2: #1e1d20; /* card surface */
+  --color-sys-grouped-3: #2a292d;
+
+  --color-sys-label: rgb(255 255 255 / 1);
+  --color-sys-label-2: rgb(235 235 245 / 0.6);
+  --color-sys-label-3: rgb(235 235 245 / 0.3);
+  --color-sys-label-4: rgb(235 235 245 / 0.16);
+
+  --color-sys-separator: rgb(84 84 88 / 0.6);
+  --color-sys-separator-opaque: #38383a;
+
+  --color-sys-fill: rgb(120 120 128 / 0.36);
+  --color-sys-fill-2: rgb(120 120 128 / 0.32);
+  --color-sys-fill-3: rgb(118 118 128 / 0.24);
+  --color-sys-fill-4: rgb(116 116 128 / 0.18);
+
+  --color-sys-blue: #0a84ff;
+  --color-sys-green: #30d158;
+  --color-sys-indigo: #5e5ce6;
+  --color-sys-orange: #ff9f0a;
+  --color-sys-red: #ff453a;
+  --color-sys-pink: #ff375f;
+  --color-sys-purple: #bf5af2;
+  --color-sys-teal: #40c8e0;
+  --color-sys-cyan: #64d2ff;
+  --color-sys-mint: #63e6e2;
+  --color-sys-yellow: #ffd60a;
+  --color-sys-brown: #ac8e68;
+
+  --color-sys-gray: #8e8e93;
+  --color-sys-gray-2: #636366;
+  --color-sys-gray-3: #48484a;
+  --color-sys-gray-4: #3a3a3c;
+  --color-sys-gray-5: #2c2c2e;
+  --color-sys-gray-6: #1c1c1e;
+
+  /* ---------- Semantic tints (DARK) ----------
+     Re-mixed at a low strength so accent cards stay DARK with only a faint hue,
+     instead of the muddy/brownish result of the light-theme 30-34% mix on a
+     near-black card. Mixed over the slightly-lighter grouped-3 for a touch of
+     elevation. */
+  --color-pink: color-mix(in srgb, var(--color-sys-pink) 16%, var(--color-sys-grouped-3));
+  --color-mint: color-mix(in srgb, var(--color-sys-green) 16%, var(--color-sys-grouped-3));
+  --color-lavender: color-mix(in srgb, var(--color-sys-indigo) 16%, var(--color-sys-grouped-3));
+  --color-butter: color-mix(in srgb, var(--color-sys-yellow) 14%, var(--color-sys-grouped-3));
+  --color-peach: color-mix(in srgb, var(--color-sys-orange) 14%, var(--color-sys-grouped-3));
+  --color-sky: color-mix(in srgb, var(--color-sys-blue) 16%, var(--color-sys-grouped-3));
+
+  /* ---------- Glass tokens (DARK — neutral charcoal) ---------- */
+  --glass-fill: rgb(48 47 52 / 0.5);
+  --glass-fill-thin: rgb(48 47 52 / 0.32);
+  --glass-fill-chrome: rgb(34 33 37 / 0.5);
+  --glass-fill-overlay: rgb(22 22 24 / 0.82);
+  --glass-border: rgb(255 255 255 / 0.12);
+  --glass-highlight: rgb(255 255 255 / 0.14);
+  --glass-shadow: 0 14px 40px -10px rgb(0 0 0 / 0.6);
+
+  /* Page background: flat (no blobs) in dark too. */
+  --app-bg: none;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  /* iPhone: stop the OS resizing text + prevent pinch-zoom jank */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+  /* iPhone: kill tap highlight + double-tap zoom, allow only pan/scroll */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: pan-x pan-y;
+  overscroll-behavior-y: none;
+  /* Native feel: no long-press magnifier / "Copy" callout or text selection
+     (matches the native screens; would otherwise be an inconsistency). */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* …but form fields must stay selectable/editable (cursor, paste, autofill). */
+input,
+textarea,
+select,
+[contenteditable]:not([contenteditable="false"]) {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* ---------- Page gutter (one place to tune side spacing) ----------
+   --page-x is the horizontal padding for the main content on mobile; it widens
+   on desktop. `.page-x` applies it, `.bleed-x` lets a child run edge-to-edge and
+   re-pad itself (used by sticky headers and horizontal pill scrollers). */
+:root {
+  --page-x: 0.5rem; /* mobile gutter (8px) */
+}
+@media (min-width: 768px) {
+  :root {
+    --page-x: 2rem; /* desktop gutter (32px) */
+  }
+}
+@utility page-x {
+  padding-left: var(--page-x);
+  padding-right: var(--page-x);
+}
+@utility bleed-x {
+  margin-left: calc(-1 * var(--page-x));
+  margin-right: calc(-1 * var(--page-x));
+  padding-left: var(--page-x);
+  padding-right: var(--page-x);
+}
+/* Horizontal scroller that owns sideways swipes — stops the page hijacking a
+   slightly-diagonal drag into vertical scroll, and keeps the gesture from
+   bleeding into the page. Apply to any overflow-x-auto pill/chip row. */
+@utility hscroll {
+  overflow-x: auto;
+  /* pan-y keeps native vertical page scroll; horizontal is driven by JS
+     (useDragScroll) which locks the axis itself so diagonal swipes still work. */
+  touch-action: pan-y;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ---------- Hide scrollbars everywhere (still scrollable) ---------- */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* old Edge */
+}
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* Accessibility: honour reduced-motion — near-instant transitions/animations. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Liquid Glass background layer ----------
+   A fixed, non-animated layer behind the router outlet. Content scrolls over
+   it so glass blur visibly shifts. Base colour = --color-paper, accent blobs
+   from --app-bg on top. */
+.app-bg-layer {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  pointer-events: none;
+  background-color: var(--color-paper);
+  background-image: var(--app-bg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* ---------- Liquid Glass primitive ----------
+   Translucent fill + backdrop blur + saturation + a light top edge + soft
+   depth. Tiers override fill/blur. Use .glass on surfaces that sit over the
+   refracting background; keep text on glass OPAQUE (--color-ink/-2). */
+.glass {
+  position: relative;
+  background: var(--glass-fill);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow), inset 0 1px 0 0 var(--glass-highlight);
+  border-radius: var(--glass-radius);
+}
+/* Native Liquid-Glass edge: a 1px specular rim that's bright where light would
+   catch (top-left + bottom-right) and near-invisible along the sides, so the
+   card reads as a refracting glass slab rather than a flat translucent panel.
+   Painted with the padding-box mask trick (a gradient ring, not a solid border). */
+.glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    var(--glass-angle, 135deg),
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.22) 26%,
+    rgba(255, 255, 255, 0.06) 50%,
+    rgba(255, 255, 255, 0.28) 74%,
+    rgba(255, 255, 255, 0.75) 100%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.glass-thin {
+  background: var(--glass-fill-thin);
+}
+.glass-chrome {
+  background: var(--glass-fill-chrome);
+  -webkit-backdrop-filter: blur(var(--glass-blur-chrome)) saturate(var(--glass-saturate));
+  backdrop-filter: blur(var(--glass-blur-chrome)) saturate(var(--glass-saturate));
+}
+.glass-overlay {
+  background: var(--glass-fill-overlay);
+  -webkit-backdrop-filter: blur(var(--glass-blur-chrome)) saturate(var(--glass-saturate));
+  backdrop-filter: blur(var(--glass-blur-chrome)) saturate(var(--glass-saturate));
+}
+
+/* Legibility fallback: no backdrop-filter support → opaque surface. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass,
+  .glass-thin,
+  .glass-chrome,
+  .glass-overlay {
+    background: var(--color-surface);
+  }
+}
+/* Accessibility: user asked for less transparency → opaque + visible border. */
+@media (prefers-reduced-transparency: reduce) {
+  .glass,
+  .glass-thin,
+  .glass-chrome,
+  .glass-overlay {
+    background: var(--color-surface);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border-color: var(--color-line);
+  }
+}
+
+/* ---------- M3 Expressive primitives ---------- */
+.nb-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-1);
+}
+
+.nb-btn {
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  transition:
+    transform var(--dur-quick) var(--ease-pop),
+    filter var(--dur-quick) ease;
+  touch-action: manipulation;
+}
+.nb-btn:active:not(:disabled) {
+  transform: scale(0.96);
+  filter: brightness(0.94);
+}
+
+/* Display number — chunky tabular */
+.big-number {
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.9;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+}
+
+/* Tiny uppercase label */
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-2);
+  font-weight: 700;
+}
+
+/* Safe-area helpers (iPhone notch / home indicator) */
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* ---------- Number picker (scroll wheel) ---------- */
+.np-wheel {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+.np-mask {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 24%, #000 76%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 24%, #000 76%, transparent 100%);
+}
+.np-item {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-ink-3);
+  transform: scale(0.68);
+  transition: all 0.18s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  user-select: none;
+}
+.np-item.active {
+  color: var(--color-ink);
+  transform: scale(1.12);
+}
+.np-spacer {
+  height: 88px; /* (220 wheel − 44 item) / 2 → centers the selected row */
+}
+
+/* Jarvis chat markdown */
+.jarvis-md > :first-child { margin-top: 0; }
+.jarvis-md > :last-child { margin-bottom: 0; }
+.jarvis-md p { margin: 0 0 0.5rem; }
+.jarvis-md strong { font-weight: 800; }
+.jarvis-md em { font-style: italic; }
+.jarvis-md ul { list-style: disc; padding-left: 1.1rem; margin: 0.25rem 0 0.5rem; }
+.jarvis-md ol { list-style: decimal; padding-left: 1.2rem; margin: 0.25rem 0 0.5rem; }
+.jarvis-md li { margin: 0.15rem 0; }
+.jarvis-md h1, .jarvis-md h2, .jarvis-md h3, .jarvis-md h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 0.4rem 0 0.3rem;
+}
+.jarvis-md code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: rgb(from var(--color-ink) r g b / 0.1);
+  padding: 0.05rem 0.3rem;
+  border-radius: 6px;
+}
+.jarvis-md a { text-decoration: underline; font-weight: 700; }
+
+/* Vyom "thinking" headline — a shimmering sweep across the status text while it reasons.
+   Uses the app ink color (not a Gemini-style gold) so it reads as SeemsFit. */
+.vyom-shimmer {
+  background: linear-gradient(
+    100deg,
+    color-mix(in srgb, var(--color-ink) 42%, transparent) 20%,
+    var(--color-ink) 45%,
+    color-mix(in srgb, var(--color-ink) 42%, transparent) 70%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: vyom-shimmer 1.6s linear infinite;
+}
+@keyframes vyom-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vyom-shimmer { animation: none; color: var(--color-ink-2); }
+}

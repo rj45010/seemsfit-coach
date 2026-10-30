@@ -1,0 +1,6 @@
+dist
+ios
+android
+node_modules
+*.md
+public
